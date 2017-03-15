@@ -1,0 +1,36 @@
+{
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "scripts/common.js",
+      "scripts/config.js",
+      "scripts/yahoo-codes.js",
+      "scripts/background.js"
+    ]
+  },
+  "description": "Yahoo weather - chrome extension",
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/Tick Weather Icon Set/day/clear.png",
+      "48": "icons/Tick Weather Icon Set/day/clear.png",
+      "128": "icons/Tick Weather Icon Set/day/clear.png"
+    },
+    "default_title": "Yahoo weather"
+  },
+  "manifest_version": 2,
+  "name": "Yahoo weather",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "permissions": [
+    "tabs",
+    "https://query.yahooapis.com/*",
+    "https://api.ipify.org/?format=json",
+    "http://*/*",
+    "https://*/*",
+    "storage"
+  ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "0.1"
+}
